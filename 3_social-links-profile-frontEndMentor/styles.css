@@ -1,0 +1,154 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oxanium:wght@200..800&display=swap');
+
+
+:root{
+    --green:#c5f82a;
+    --white:#fff;
+    --Grey_700: #333333;
+    --Grey_800: #1f1f1f;
+    --Grey_900: #141414;
+    --footer: #3e52a3;
+}
+
+body {
+    background-color: var(--Grey_900);
+    font-family: 'inter',sans-serif;
+    color: var(--white);
+    text-align: center;
+    font-weight: 400;
+}
+
+p{
+    font-size: 14px;
+}
+
+.profile{
+    background-color: var(--Grey_800);
+    width: 30rem;
+    top: 6rem;
+    border-radius: 5%;
+    padding: 35px 0px;
+    margin: 0 auto;
+}
+
+img{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6rem;
+}
+
+.name{
+font-weight: 700;
+}
+
+.city{
+    text-align: center;
+    color: var(--green);
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.social{
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: var(--Grey_700);
+    margin: 15px 55px 5px 55px;
+    /* margin-top: 15px;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-bottom: 5px; */
+    border-radius: 10px;
+    padding: 13px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.social:hover{
+    background-color:var(--green);
+    transition: 0.3s;
+    color: var(--Grey_900);
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.attribution a{
+    color: var(--footer);
+}
+
+.attribution a:hover{
+    color: var(--green);
+    transition: 0.3s;
+}
+
+@media (max-width:769px){
+    img{
+        width: 35%;
+    }
+
+    body{
+        font-size: 14px;
+        margin-top: 2.5%;
+    }
+
+    .name{
+        font-size: 25px;
+}
+
+    .social{
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+@media (max-width:426px){
+    .attribution{
+        margin-left: 65px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:376px){
+    img{
+        width: 45%;
+    }
+
+    body{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .name{
+        font-size: 35px;
+}
+
+    .social{
+        font-size: 28px;
+    }
+
+    .attribution{
+        margin-left: 95px;
+        font-size: 15px;
+    }
+}
+
+
+
