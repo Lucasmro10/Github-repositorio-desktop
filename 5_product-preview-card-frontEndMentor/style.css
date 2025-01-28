@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&family=Young+Serif&display=swap');
+
+
+:root{
+--Dark_cyan: #3c8067;
+--Cream: #f2ebe3;
+
+/* ### Neutral */
+--Very_dark_blue: #1c232b;
+--Dark_grayish_blue: #6c7289;
+--White: #ffffff;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Fraunces', sans-serif;
+    background-color: var(--Cream);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.2rem; */
+
+.container{
+    background-color: var(--White);
+    display: flex;
+    width: 60rem;
+    height: auto;
+    margin: 50% auto;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    border-radius: 1.2rem;
+}
+
+
+.perfume{
+    font-family: 'montserrat', serif;
+    color: var(--Dark_grayish_blue);
+    margin: 2rem;
+    margin-bottom: 1rem;
+}
+
+.image-section{
+    width: 50%;
+    height: auto;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1.2rem 0 0 1.2rem;
+}
+
+.content{
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title{
+    font-size: 4rem;
+    color: var(--Very_dark_blue);
+    margin: auto 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.description{
+    font-family:'montserrat', serif ;    
+    font-size: 1.5rem;
+    color: var(--Dark_grayish_blue);
+    margin: auto 2rem;
+    margin-bottom: 2rem;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    margin: auto 2rem;
+    /* margin-bottom: 1.5rem; */
+    color: var(--Dark_cyan);
+    font-size: 1.8rem;
+}
+
+.old-price{
+    font-family: 'montserrat', serif;
+    color: var(--Dark_grayish_blue);
+    text-decoration: line-through;
+    margin-left: 1.5rem;
+}
+
+.button{
+    background-color: var(--Dark_cyan);
+    color: var(--White);
+    display: flex;
+    font-size: 1.5rem;
+    font-family: 'montserrat', serif;
+    font-weight: 700;
+    border-radius: 1.2rem;
+    border: none;
+    padding: 1.5rem;
+    margin: auto 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.button a{
+    color: var(--White);
+    text-decoration:none;
+    margin-left: 1rem;
+}
+.cart-icon{
+    height: auto;
+    width: 2rem;
+}
+
+.button:hover{
+    background-color: var(--Very_dark_blue);
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { 
+    color: #3e52a3; 
+    text-decoration: none;
+    margin-bottom: 1px;
+}
+
+.attribution a:hover{
+    font-size: 14px;
+    color: var(--Dark_cyan);
+}
+
+
+@media screen and (max-width: 426px) {
+    .image-section img{
+    content: url(../images/image-product-mobile.jpg);
+    border-radius: 0.5rem 1.2rem 0 0;
+    }
+    
+    .image-section {
+        width: 99%;
+    }
+
+    .container{
+        flex-direction: column;
+        padding:0;
+        margin: 1rem auto;
+        width: 100%;
+        border-radius: 0 0 1.2rem 1.2rem;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .perfume {
+        margin: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        margin: 2rem;
+        padding: 1rem;
+    }
+
+    .cart-icon{
+        /* height: auto; */
+        /* width: 1rem; */
+    }
+    
+}    
+
